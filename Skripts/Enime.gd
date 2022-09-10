@@ -12,22 +12,21 @@ var move = true
 func _physics_process(delta):
 	if !alive:
 		return
-		
+	#only check every 10 frems	
 	if int(round(delta)) % 10== 0:
+		#only change of direction when one of the two points is reached
 		if int(round(global_transform.origin.x)) >= point1.x:
 			move = true
 		if int(round(global_transform.origin.x)) <= point2.x:
 			move = false	
-			
 	if move:
-		
 		move_left(delta)
 	else :
 		move_right(delta)
 		
 	
 	
-func on_stomp():
+func get_bombit():
 	alive = false
 
 func move_left(delta):

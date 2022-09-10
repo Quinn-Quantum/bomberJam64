@@ -44,7 +44,6 @@ func spawn():
 		#only y has to be adjusted, otherwise the player is taken as the starting point
 		bombe1.transform.origin.y = var2
 		add_child(bombe1)
-		print(bombe1.transform.origin)
 		bombeIsInHands = true
 	
 	

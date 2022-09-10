@@ -28,7 +28,7 @@ func _physics_process(delta):
 	
 func get_bombit():
 	alive = false
-
+	
 func move_left(delta):
 		move_and_slide_with_snap(Vector3.LEFT * SPEED * delta, Vector3(0,1,0))
 

@@ -47,7 +47,7 @@ func spawn():
 	bombe1.transform.origin.y = global_transform.origin.y + 0.005
 	bombe1.transform.origin.z = global_transform.origin.z  
 	add_child(bombe1)
-	#add_child_below_node(get_tree().get_root().get_node("Level_1"),bombe1)
+	
 	
 
 	

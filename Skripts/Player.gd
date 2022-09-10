@@ -5,7 +5,7 @@ const GRAVITY = 4
 const SPEED = 4
 const JUMP_POWER = 90
 const ROTATING = 4
-const UP_VECTOR = Vector2(0,-1)
+
 
 func _ready():
 	pass

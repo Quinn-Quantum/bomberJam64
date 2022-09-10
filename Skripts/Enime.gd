@@ -1,7 +1,7 @@
 extends KinematicBody
 
 
-const GRAVITY = 4
+#const GRAVITY = 4
 const SPEED = 60
 var alive = true
 var point1 = Vector3(5,0,0)

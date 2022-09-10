@@ -44,7 +44,6 @@ func spawn():
 	var var1 = 0.06
 	var var2 = 0.005
 	var var3 = 0.05
-	print("HA")
 	var bombe1 = bombe_klein.instance()
 	bombe1.transform.origin.x = global_transform.origin.x - var1
 	bombe1.transform.origin.y = global_transform.origin.y + var2

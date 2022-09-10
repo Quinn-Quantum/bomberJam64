@@ -9,10 +9,6 @@ var point2 = Vector3(-5,0,0)
 var move = true
 
 
-func _ready():
-	pass 
-
-
 func _physics_process(delta):
 	if !alive:
 		return
@@ -24,7 +20,7 @@ func _physics_process(delta):
 			move = false	
 			
 	if move:
-		print(global_transform.origin.x)
+		
 		move_left(delta)
 	else :
 		move_right(delta)

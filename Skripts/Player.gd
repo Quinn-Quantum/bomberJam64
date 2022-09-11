@@ -6,7 +6,8 @@ const SPEED = 4
 const JUMP_POWER = 90
 const ROTATING = 4
 #var area
-var bombeIsInHands = false
+var bombe1
+var bombe_klein = preload("res://Scenes/Objekts/Bombe_klein.tscn")
 #func area
 func _physics_process(delta):
 	#When player is in the air
@@ -34,18 +35,20 @@ func check_key_input(delta):
 		
 	if Input.is_action_just_pressed("Spawn_Bombe"):
 		spawn()
+		
+	if Input.is_action_pressed("throw") and G.bombeLand:
+		remove_Bombe()
 	
+		
 func spawn():
 	#Check if a bomb is already held
-	if !bombeIsInHands :
-		var bombe_klein = preload("res://Scenes/Objekts/Bombe_klein.tscn")
+	if !G.bombeIsInHands :
 		var var2 = 0.6
-		var bombe1 = bombe_klein.instance()
+		bombe1 = bombe_klein.instance()
 		#only y has to be adjusted, otherwise the player is taken as the starting point
 		bombe1.transform.origin.y = var2
 		add_child(bombe1)
-		bombeIsInHands = true
-	
-	
-
-	
+		G.bombeIsInHands = true
+		
+func remove_Bombe():
+	remove_child(bombe1)

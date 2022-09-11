@@ -12,6 +12,8 @@ var move = true
 func _physics_process(delta):
 	if !alive:
 		return
+		
+	
 	#only check every 10 frems	
 	if int(round(delta)) % 10== 0:
 		#only change of direction when one of the two points is reached

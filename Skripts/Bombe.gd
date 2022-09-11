@@ -2,11 +2,11 @@ extends KinematicBody
 
 func _physics_process(delta):
 	if Input.is_action_pressed("throw") and G.bombeIsInHands:
-		move_bombe(delta)
+		move_bombe()
 	check_for_stomp()
 	
 	
-func move_bombe(delta):
+func move_bombe():
 	var player_eye
 	for body in $HitBox.get_overlapping_bodies():
 		if body.name == "Player":

@@ -33,7 +33,7 @@ func bombit():
 	queue_free()
 	
 func move_left(delta):
-		move_and_slide_with_snap(Vector3.LEFT * SPEED * delta, Vector3(0,1,0))
+		move_and_slide(Vector3.LEFT * SPEED * delta, Vector3(0,1,0))
 
 func move_right(delta):
-		move_and_slide_with_snap(Vector3.RIGHT * SPEED * delta, Vector3(0,1,0))
+		move_and_slide(Vector3.RIGHT * SPEED * delta, Vector3(0,1,0))

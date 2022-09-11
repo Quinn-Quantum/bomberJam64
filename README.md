@@ -1,12 +1,9 @@
 # Projekt vor Gamejam
   Jam: BomberJam64 <br>
   Orgerteam: Comunity from SambaZockt Discord
-
-## Table of Contents
-1. [Spielanleitung](#Spielanleitung)
 <br>
-## Spielanleitung
-### Move
+## Spielanleitung <br>
+### Move <br>
  left: A, Left <br>
  right: D, Right <br>
  jump: Space <br>

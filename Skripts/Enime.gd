@@ -28,8 +28,9 @@ func _physics_process(delta):
 		
 	
 	
-func get_bombit():
+func bombit():
 	alive = false
+	queue_free()
 	
 func move_left(delta):
 		move_and_slide_with_snap(Vector3.LEFT * SPEED * delta, Vector3(0,1,0))

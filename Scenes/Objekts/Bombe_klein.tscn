@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Skripts/Bombe.gd" type="Script" id=1]
 
@@ -8,6 +8,9 @@
 
 [sub_resource type="SpatialMaterial" id=3]
 albedo_color = Color( 0.12549, 0.113725, 0.113725, 1 )
+
+[sub_resource type="SphereShape" id=4]
+radius = 1.11895
 
 [node name="Bombe_klein" type="Spatial"]
 
@@ -22,3 +25,9 @@ shape = SubResource( 1 )
 transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )
 mesh = SubResource( 2 )
 material/0 = SubResource( 3 )
+
+[node name="HitBox" type="Area" parent="KinematicBody"]
+
+[node name="CollisionShape" type="CollisionShape" parent="KinematicBody/HitBox"]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0 )
+shape = SubResource( 4 )

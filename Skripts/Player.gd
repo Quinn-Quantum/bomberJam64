@@ -10,6 +10,10 @@ var bombe1
 var bombe_klein = preload("res://Scenes/Objekts/Bombe_klein.tscn")
 #func area
 func _physics_process(delta):
+	if G.bombeLand:
+		remove_child(bombe1)
+		G.bombeLand = false
+	
 	#When player is in the air
 	move_and_collide(Vector3.DOWN * delta * GRAVITY)
 	
@@ -18,11 +22,11 @@ func _physics_process(delta):
 func check_key_input(delta):
 	if Input.is_action_pressed("left"):
 		rotate(Vector3.UP, ROTATING * delta)
-		#move_and_collide(-transform.basis.x * SPEED * delta)
+		move_and_collide(-transform.basis.x * SPEED * delta)
 	
 	if Input.is_action_pressed("right"):
 		rotate(Vector3.UP, -ROTATING * delta)
-		#move_and_collide(transform.basis.x * SPEED * delta)
+		move_and_collide(transform.basis.x * SPEED * delta)
 	
 	if Input.is_action_pressed("forward"):
 		move_and_collide(-transform.basis.z * SPEED * delta)
@@ -36,10 +40,6 @@ func check_key_input(delta):
 	if Input.is_action_just_pressed("Spawn_Bombe"):
 		spawn()
 		
-	if Input.is_action_pressed("throw") and G.bombeLand:
-		remove_Bombe()
-	
-		
 func spawn():
 	#Check if a bomb is already held
 	if !G.bombeIsInHands :
@@ -50,5 +50,3 @@ func spawn():
 		add_child(bombe1)
 		G.bombeIsInHands = true
 		
-func remove_Bombe():
-	remove_child(bombe1)

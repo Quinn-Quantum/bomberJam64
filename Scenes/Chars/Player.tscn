@@ -27,8 +27,5 @@ material/0 = SubResource( 3 )
 [node name="Position3D" type="Position3D" parent="Player"]
 transform = Transform( 1, 0, 0, 0, 0.77373, 0.633516, 0, -0.633516, 0.77373, 0.0850104, 2.28643, 2.66604 )
 
-[node name="Camera" type="InterpolatedCamera" parent="."]
+[node name="Camera" type="Camera" parent="Player"]
 transform = Transform( 0.999976, -0.00300516, 0.00625881, 0, 0.901471, 0.43284, -0.00694289, -0.43283, 0.901449, 0.463951, 1.77257, 3.83511 )
-target = NodePath("../Player/Position3D")
-speed = 2.0
-enabled = true

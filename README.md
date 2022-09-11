@@ -1,9 +1,9 @@
-### Projekt vor Gamejam
+# Projekt vor Gamejam
   Jam: BomberJam64 
   Orgerteam: Comunity from SambaZockt Discord
 
 ## Spielanleitung
-# Move
+### Move
   left: A, Left
   right: D, Right
   jump: Space

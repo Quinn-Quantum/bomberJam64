@@ -1,9 +1,9 @@
 extends KinematicBody
 
 #const area
-const GRAVITY = 4
+const GRAVITY = 3
 const SPEED = 4
-const JUMP_POWER = 90
+const JUMP_POWER = 100
 const ROTATING = 4
 #var area
 var bombe1

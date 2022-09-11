@@ -1,7 +1,5 @@
 extends KinematicBody
 
-signal timeout
-
 func _physics_process(delta):
 	if Input.is_action_pressed("throw") and G.bombeIsInHands:
 		move_bombe(delta)
@@ -13,7 +11,7 @@ func move_bombe(delta):
 	for body in $HitBox.get_overlapping_bodies():
 		if body.name == "Player":
 			player_eye = body.transform.basis.z
-	for i in range(50):
+	for _i in range(50):
 		move_and_slide( - player_eye * 4 )
 		move_and_slide(transform.basis.y * - 0.5)
 		check_for_stomp()

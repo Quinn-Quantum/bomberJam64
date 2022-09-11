@@ -7,10 +7,10 @@
 <br>
 ## Spielanleitung
 ### Move
- - left: A, Left
- - right: D, Right
- - jump: Space
- - forward: W, Up
- - back: S, Down
- - Spawn a bomb: E
- - Throw a bomb: R
+ left: A, Left <br>
+ right: D, Right <br>
+ jump: Space <br>
+ forward: W, Up <br>
+ back: S, Down <br>
+ Spawn a bomb: E <br>
+ Throw a bomb: R <br>

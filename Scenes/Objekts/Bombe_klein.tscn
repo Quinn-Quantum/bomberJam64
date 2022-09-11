@@ -29,5 +29,5 @@ material/0 = SubResource( 3 )
 [node name="HitBox" type="Area" parent="KinematicBody"]
 
 [node name="CollisionShape" type="CollisionShape" parent="KinematicBody/HitBox"]
-transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0 )
+transform = Transform( 0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 0, 0, 0 )
 shape = SubResource( 4 )

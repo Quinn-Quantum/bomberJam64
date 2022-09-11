@@ -19,7 +19,7 @@ glow_bloom = 0.1
 [node name="Player" type="Spatial" parent="."]
 
 [node name="Player" parent="Player" instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.562645, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000179291, 0.562645, 0.01583 )
 
 [node name="Spatial" parent="." instance=ExtResource( 1 )]
 

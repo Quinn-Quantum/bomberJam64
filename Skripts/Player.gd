@@ -43,7 +43,7 @@ func check_key_input(delta):
 func spawn():
 	#Check if a bomb is already held
 	if !G.bombeIsInHands :
-		var var2 = 0.6
+		var var2 = 0.65
 		bombe1 = bombe_klein.instance()
 		#only y has to be adjusted, otherwise the player is taken as the starting point
 		bombe1.transform.origin.y = var2
